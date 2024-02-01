@@ -17,4 +17,4 @@ export PATH=/pico/picotool/build:$PATH
 cd /pico/micropython/ports/rp2
 sed -i 's/#define MICROPY_HW_ENABLE_UART_REPL.*/#define MICROPY_HW_ENABLE_UART_REPL (1) \/\/ useful if there is no USB/' mpconfigport.h
 make BOARD=RPI_PICO_W
-cp -r /pico/micropython/ports/rp2/build-RPI_PICO /output
+cp -r /pico/micropython/ports/rp2/build-RPI_PICO_W /output
