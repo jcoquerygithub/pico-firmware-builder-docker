@@ -13,5 +13,6 @@ From the pi4 (or other):
 ```shell
 git clone https://github.com/jcoquerygithub/pico-firmware-builder-docker.git
 docker build -t pico-firmware-builder pico-firmware-builder-docker
-
+mkdir /tmp/output
+docker run -it --rm -v /tmp/output:/output pico-firmware-builder
 ```
